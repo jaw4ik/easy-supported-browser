@@ -9,11 +9,11 @@
 }
 #not-supported-page .bg-table .top-bg {
   height: 61%;
-  background: url('img/page-top-part-bg.png') 0 0 repeat;
+  background: url('img/easy-supported-browser-top-part-bg.png') 0 0 repeat;
 }
 #not-supported-page .bg-table .toothed-bg {
   height: 8px;
-  background: url('img/page-middle-part-bg.png') center center repeat-x;
+  background: url('img/easy-supported-browser-middle-part-bg.png') center center repeat-x;
 }
 #not-supported-page .bg-table .bottom-bg {
   height: 50%;
@@ -32,7 +32,7 @@
   height: 36px;
   width: 200px;
   margin: 30px;
-  background: url('img/logo.png') 0 0 no-repeat;
+  background: url('img/easy-supported-browser-logo.png') 0 0 no-repeat;
 }
 #not-supported-page .markup-table .content-cell {
   padding: 0 30px;
@@ -87,7 +87,7 @@
   height: 208px;
   width: 177px;
   margin: 0 auto;
-  background: url('img/supported-browser-bg.png') center bottom no-repeat;
+  background: url('img/easy-supported-browser-browser-bg.png') center bottom no-repeat;
   text-decoration: none;
 }
 #not-supported-page .markup-table .supported-browser-container.with-link:hover .browser-title {
