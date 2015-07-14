@@ -132,32 +132,32 @@
 
 	function renderNotSupportedView() {
 		var notSupportedViewHtml =
-			'<table class="bg-table" border="0" cellpadding="0" cellspacing="0">\
+			'<table class="not-supported-page-bg-table" border="0" cellpadding="0" cellspacing="0">\
 	            <tr>\
-	                <td class="top-bg">&nbsp;</td>\
+	                <td class="not-supported-page-top-bg">&nbsp;</td>\
 	            </tr>\
 	            <tr>\
 	                <td>\
-	                    <div class="toothed-bg">&nbsp;</div>\
+	                    <div class="not-supported-page-toothed-bg">&nbsp;</div>\
 	                </td>\
 	            </tr>\
 	            <tr>\
-	                <td class="bottom-bg">&nbsp;</td>\
+	                <td class="not-supported-page-bottom-bg">&nbsp;</td>\
 	            </tr>\
 	        </table>\
-	        <table class="markup-table" border="0" cellpadding="0" cellspacing="0">\
+	        <table class="not-supported-page-markup-table" border="0" cellpadding="0" cellspacing="0">\
 	            <tr>\
-	                <td colspan="3" class="eg-logo-wrapper">\
-	                    <div class="eg-logo">&nbsp;</div>\
+	                <td colspan="3" class="not-supported-page-logo-wrapper">\
+	                    <div class="not-supported-page-logo">&nbsp;</div>\
 	                </td>\
 	            </tr>\
 	            <tr>\
 	                <td>&nbsp;</td>\
-	                <td class="content-cell">\
-	                    <div class="content">\
-	                        <h1 class="page-caption">We can’t guarantee that easygenerator will work perfectly on your current browser</h1>\
-	                        <a href="" id="skip-not-supported-page" class="try-anyway-link">I still want to continue</a>\
-	                        <p class="page-caption-description">We recommend that you upgrade your browser or use a fully supported browser. Click one of this icons below to install or upgrade.</p>\
+	                <td class="not-supported-page-content-cell">\
+	                    <div class="not-supported-page-content">\
+	                        <h1 class="not-supported-page-caption">We can\'t guarantee that easygenerator will work perfectly on your current browser</h1>\
+	                        <a href="" id="skip-not-supported-page" class="not-supported-page-try-anyway-link">I still want to continue</a>\
+	                        <p class="not-supported-page-caption-description">We recommend that you upgrade your browser or use a fully supported browser. Click one of this icons below to install or upgrade.</p>\
 	                        <table class="supported-browsers-group" border="0" cellpadding="0" cellspacing="0">\
 	                            <tr>\
 	                                <td>&nbsp;</td>\
@@ -171,7 +171,7 @@
 	            </tr>\
 	            <tr>\
 	                <td>\
-	                    <div class="bottom-aligner">&nbsp;</div>\
+	                    <div class="not-supported-page-bottom-aligner">&nbsp;</div>\
 	                </td>\
 	                <td>&nbsp;</td>\
 	                <td>&nbsp;</td>\
@@ -189,9 +189,9 @@
 				supportedBrowsersListHtml += 
 					'<td class="supported-browser-item">\
 			            <a href="' + browser.link + '" class="supported-browser-container with-link" target="_blank">\
-			                <img class="browser-image" src="' + browser.image + '" alt="">\
-			                <p class="browser-title-wrapper">\
-			                    <span class="browser-title">' + browser.title + '</span>\
+			                <img class="supported-browser-image" src="' + browser.image + '" alt="">\
+			                <p class="supported-browser-title-wrapper">\
+			                    <span class="supported-browser-title">' + browser.title + '</span>\
 			                </p>\
 			            </a>\
 			        </td>'
@@ -199,9 +199,9 @@
 				supportedBrowsersListHtml += 
 					'<td class="supported-browser-item">\
 			            <div class="supported-browser-container">\
-			                <img class="browser-image" src="' + browser.image + '" alt="">\
-			                <p class="browser-title-wrapper">\
-			                    <span class="browser-title">' + browser.title + '</span>\
+			                <img class="supported-browser-image" src="' + browser.image + '" alt="">\
+			                <p class="supported-browser-title-wrapper">\
+			                    <span class="supported-browser-title">' + browser.title + '</span>\
 			                </p>\
 			            </div>\
 			        </td>'
