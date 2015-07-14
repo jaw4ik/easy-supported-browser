@@ -44,7 +44,7 @@
 
 	function isBrowserSupported() {
 		var browserInfo = detectBrowser();
-
+		
 		if (!browserInfo.name || !browserInfo.version || !browserInfo.platform) {
 			return false;
 		}
@@ -113,14 +113,15 @@
             temp = /\brv[ :]+(\d+)/g.exec(ua) || [];
             browserName = 'msie';
             version = temp[1] || '';
+		} else if ((/(android)/i.exec(platform) && /(safari)/i.exec(browserName)) || 
+			(/(android)/i.exec(platform) && /(chrome)/i.exec(browserName) && /(version)/i.exec(ua))) {
+			browserName = 'native';
 		} else if (/(chrome)/i.exec(browserName)) {
             temp = ua.match(/\bOPR\/(\d+)/);
             if (temp != null) {
                 browserName = 'opera';
                 version = temp[1] || '';
             }
-		} else if (/(android)/i.exec(platform) && /(safari)/i.exec(browserName)) {
-			browserName = 'native';
 		}
 
 		return {
