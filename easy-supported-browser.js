@@ -77,7 +77,7 @@
 
 	function detectBrowser() {
 		var ua = navigator.userAgent,
-            matches = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [],
+            matches = ua.match(/(opera|chrome|safari|firefox|msie|trident|opios|crios(?=\/))\/?\s*(\d+)/i) || [],
             browserName = matches[1],
             version = matches[2],
             temp;
@@ -109,7 +109,7 @@
 		}
         
         // hacks
-        if (/trident/i.test(browserName)) {
+        if (/(trident)/i.exec(browserName)) {
             temp = /\brv[ :]+(\d+)/g.exec(ua) || [];
             browserName = 'msie';
             version = temp[1] || '';
@@ -122,6 +122,10 @@
                 browserName = 'opera';
                 version = temp[1] || '';
             }
+		} else if (/(crios)/i.exec(browserName)) {
+			browserName = 'chrome';
+		} else if (/(opios)/i.exec(browserName)) {
+			browserName = 'opera';
 		}
 
 		return {
