@@ -12,6 +12,7 @@
 		options.browsers.blackberry = extend(configurationOptions.browsers.blackberry || {}, configurationOptions.globalBrowsersInfo);
 
 		options.mainAppContainerId = configurationOptions.mainAppContainerId;
+		options.debug = configurationOptions.debug;
 
 		return supportedBrowser;
 	}
@@ -20,6 +21,11 @@
 		if (!isBrowserSupported()) {
 			hideMainApp();
 			renderNotSupportedView();
+		}
+
+		if (options.debug) {
+			var browser = detectBrowser();
+			alert('Browser: ' + browser.name + '\nVersion: ' + browser.version + '\nPlatform: ' + browser.platform + '\n\nUser agent: \n' + navigator.userAgent);
 		}
 
 		return supportedBrowser;
