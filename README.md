@@ -86,14 +86,15 @@ You must configure list of browsers you want to support.
 ```
 
 #### Parameters
-**browsers** - list of supported browsers.
 
-**mainAppContainerId** - ID of container which will be hidden when browser not supported. It should be the highest block in the body.
-
-**globalBrowsersInfo** - when browser parameters is the same for all platforms to exclude repetition you can add global info about this browser.
+parameter | description
+--- | ---
+**browsers** | list of supported browsers
+**mainAppContainerId** | ID of container which will be hidden when browser not supported. It should be the highest block in the body
+**globalBrowsersInfo** | when browser parameters is the same for all platforms to exclude repetition you can add global info about this browser
 
 #### Browsers list configuration
-**browsers** should contain list of supported platforms and each platform should contain list of supported browsers for this platform.
+`browsers` should contain list of supported platforms and each platform should contain list of supported browsers for this platform.
 ```
 browsers: {
     win: {
@@ -113,8 +114,8 @@ parameter | required | description
 --- | --- | ---
 **title** | required | browser title, that will be shown on the page
 **image** | required | path to browser image, that will be shown on the page
-**link** | optional | url to download the browser
-**version** | optional | browser version from which browser supported
+**link** | optional | url to download the browser. When omitted, the browser block will be unclickable
+**version** | optional | browser version from which browser supported. When ommitted all version will be supported
 
 ### Supported platforms and browsers
 
@@ -140,7 +141,7 @@ code | browser name
 **msie** | Microsoft Internet Explorer
 **opera** | Opera
 
-### Initialization
+## Initialization
 
 After you configure plugin you must call `init` function:
 ```
@@ -151,7 +152,7 @@ Also supported chaining:
 supportedBrowser.configure({...}).init();
 ```
 
-### Debug
+## Debug
 
 To turn on the debug mode set `debug` parameter to true.
 ```
