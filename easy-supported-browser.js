@@ -145,15 +145,15 @@
 		var notSupportedViewHtml =
 			'<table class="not-supported-page-bg-table" border="0" cellpadding="0" cellspacing="0">\
 	            <tr>\
-	                <td class="not-supported-page-top-bg">&nbsp;</td>\
+	                <td class="not-supported-page-top-bg" colspan="2">&nbsp;</td>\
 	            </tr>\
 	            <tr>\
-	                <td>\
+	                <td colspan="2">\
 	                    <div class="not-supported-page-toothed-bg">&nbsp;</div>\
 	                </td>\
 	            </tr>\
 	            <tr>\
-	                <td class="not-supported-page-bottom-bg">&nbsp;</td>\
+	                <td class="not-supported-page-bottom-bg" colspan="2">&nbsp;</td>\
 	            </tr>\
 	        </table>\
 	        <table class="not-supported-page-markup-table" border="0" cellpadding="0" cellspacing="0">\
