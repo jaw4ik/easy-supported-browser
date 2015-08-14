@@ -231,6 +231,7 @@
 		getById('skip-not-supported-page').onclick = function () {
 			notSupportedView.style.display = 'none';
 			showMainApp();
+			return false;
 		}
 
 		return notSupportedView;
