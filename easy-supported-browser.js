@@ -114,8 +114,10 @@
 			version = temp[1];
 		}
         
-        // hacks
-        if (/(trident)/i.exec(browserName)) {
+	    // hacks
+		if (/edge\/(\d+)/.exec(ua.toLowerCase())) {
+		    browserName = 'edge';
+		} else if (/(trident)/i.exec(browserName)) {
             temp = /\brv[ :]+(\d+)/g.exec(ua) || [];
             browserName = 'msie';
             version = temp[1] || '';
